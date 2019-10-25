@@ -3,11 +3,18 @@ buildscript {
         jcenter()
         mavenCentral()
     	google()
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     }
 
     dependencies {
     	classpath 'com.android.tools.build:gradle:3.+'
         classpath 'com.google.gms:google-services:4.1.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     }
 }
 
